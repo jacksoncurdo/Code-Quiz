@@ -18,9 +18,9 @@ var questions = [
     },
 
     {
-        title: "The scientific name for a mushroom's stem is:",
-        choices: ["Stipe", "Stripe", "Stem", "Stipple"],
-        answer: "Stipe"
+        title: "String values must be enclosed within _____ when be assigned to variables.",
+        choices: ["commas", "curly brackets", "quotes", "parentheses"],
+        answer: "quotes"
     },
 
     {
