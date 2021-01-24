@@ -24,9 +24,9 @@ var questions = [
     },
 
     {
-        title: "This mushroom is known as the Chanterelle",
-        choices: ["Helvella", "Cantharellus", "Craterellus", "Laetiporus"],
-        answer: "Cantharellus"
+        title: "A very useful tool used during devolpment and debugging for printing content to the debugger is:",
+        choices: ["JavaScript", "terminal/bash", "for loops", "console log"],
+        answer: "console log"
     },
 
 ];
