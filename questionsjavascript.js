@@ -12,9 +12,9 @@ var questions = [
     },
 
     {
-        title: "This edible mushroom is prized for it's delicious flavor",
-        choices: ["Amanita bisporigera", "Galerina marginata", "Morchella escuelenta", "Gravidex hombrii"],
-        answer: "Morchella escuelenta"
+        title: "Arrays in JavaScript can be used to store _____.",
+        choices: [" numbers and strings", "other arrays", "booleans", "all of the above"],
+        answer: "all of the above"
     },
 
     {
