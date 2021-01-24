@@ -11,10 +11,13 @@ h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-h2, h5, a, span {
-    color: white;
+h5 {
+    color:purple;
 }
 
+h2, a, span {
+    color: white;
+}
 
 .p-2 {
     font-size: 22px; 
