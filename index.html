@@ -1,44 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
+!DOCTYPE html>
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>JS Code Quiz</title>
+    
 </head>
 
 <body>
-    <main class="container">
-        <div class = "stats row">
-            <div class= "col-lg-3 offset-1">
-                <div class = "View Highscore">View Highscore</div>
+    <header class="p-2" style="background-color: rgb(16, 146, 16)">
+        <strong><a href="highscores.html">HALL OF FAME</a></strong>
+        <span id="timer" class="float-right mr-2">Time: 0</span>
+    </header>
+
+    <!-- Home Screen -->
+    <div class="container mt-5" id="home">
+        <div class="row justify-content-center mt-5 pt-3 pb-3">
+            <div class="col-10 col-lg-8 text-center">
+                <h1>Mushroom Quiz!</h1><br>
+                <h5><p>Try to answer these questions about mushrooms in 120 seconds... <br></h5>
+                    <b><i>NOTE:</i> <br>
+                    </b>When you answer incorrectly you'll lose 20 seconds!</p> <br>
+                <button type="button" id="startBtn" class="btn btn-info btn-lg">START QUIZ</button>
             </div>
         </div>
-
-        <div class= "row mt-3">
-            <h1 class = "banner text-center col-12">Coding Quiz</h1>
-        </div>
-
-        <div class= "row">
-            <div class = "instruction box">
-                Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds!
-            </div>
-        </div>
-
-        <div class= "row">
-            <textarea class= "highscore text-center col-auto"></textarea>
-        </div> 
-
-        <div class= "buttons col-auto">
-            <audio class="correct" src="assets/sounds/correct.wav" autoplay= "false" ></audio>
-            <audio class="wrong" src="assets/sounds/wrong.wav" autoplay= "false" ></audio>
-    </div>       
-   
-    <div class= "row">
-        <div class= "cw col-12 text-center mt-3"></div>
     </div>
 
-    </main>
+    <!-- Q&A -->
+    <div class="container mt-5 d-none" id="quiz">
+        <div class="row justify-content-center mt-5 pt-3 pb-3">
+            <div class="col-10 col-lg-8" id="QA-block">
+                <h3 id="questions" class="mb-4">QUESTION</h3>
+                <ul id="answers" class="list-unstyled">
+                    <li class="answerChoice">A) </li>
+                    <li class="answerChoice">B) </li>
+                    <li class="answerChoice">C) </li>
+                    <li class="answerChoice">D) </li>
+                </ul>
+                <p class="feedback"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Finished Screen -->
+    <div class="container mt-5 d-none" id="submit-score">
+        <div class="row justify-content-center mt-5 pt-3 pb-3">
+            <div class="col-10 col-lg-8">
+                <h2>Finished!</h2>
+                <p id="user-score"> </p>
+                <form class="form-group">
+                    <label for="new-score">Enter your name: </label>
+                    <input type="text" id="userName">
+                    <button type="button" class="btn btn-info btn-sm submitBtn">Join Hall Of Fame</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="questions.js"></script>
+    <script src="main.js"></script>
 </body>
-<script src="javascript.js"></script>
+
 </html>
